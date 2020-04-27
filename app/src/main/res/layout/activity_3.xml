@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/create_habit_instruction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This is the list of your current habits you are tracking."
+        android:layout_marginVertical="16dp"
+        android:layout_marginLeft="25dp"/>
+
+    <!--Dummy buttons-->
+    <Button
+        android:layout_width="370dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginVertical="5dp"
+        android:text="Habit A" />
+
+    <Button
+        android:layout_width="370dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginVertical="5dp"
+        android:text="Habit B" />
+
+    <Button
+        android:layout_width="370dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginVertical="5dp"
+        android:text="Habit C" />
+
+</LinearLayout>
