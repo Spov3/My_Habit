@@ -37,13 +37,13 @@
 
     <Button
         android:id="@+id/current_habits"
-        android:layout_width="370dp"
-        android:layout_height="150dp"
-        android:layout_marginLeft="25dp"
+        android:layout_width="680dp"
+        android:layout_height="132dp"
         android:layout_marginVertical="25dp"
-        android:onClick="onButtonClick3"
+        android:layout_marginLeft="25dp"
         android:background="@color/colorGray"
-        android:textColor="@color/colorWhite"
-        android:text="@string/view_habit" />
+        android:onClick="onButtonClick3"
+        android:text="@string/view_habit"
+        android:textColor="@color/colorWhite" />
 
 </LinearLayout>

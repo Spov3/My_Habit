@@ -9,7 +9,7 @@
     <color name="colorDarkGray">#404040</color>
     <color name="colorGray">#808080</color>
     <color name="colorWhite">#FFFFFF</color>
-    <color name="colorBlack">#000000</color>
-    <color name="bg_white">#FAFAFA</color>
+    <color name="colorBlack">#FFFFFF</color>
+    <color name="bg_white">#131313</color>
 
 </resources>

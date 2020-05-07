@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">My Habit (ទម្លាប់)</string>
+
+    <!--activity_main: Main screen-->
+    <string name="greeting_text">សូម​ស្វាគមន៍​មក​កាន់​កម្មវិធី​តាមដាន​ទម្លាប់​របស់​អ្នក​!</string>
+    <string name="view_habit">មេីល​ទម្លាប់​របស់​ខ្ញុំ​</string>
+
+    <!--activity_2: create habit-->
+    <string name="instruction_act2">បង្កើត​ទម្លាប់​ថ្មី​ខាង​ក្រោម​នេះ​៖</string>
+
+    <!--activity_3: View current habits-->
+    <string name="instruction_act3">នេះគឺជាបញ្ជីទម្លាប់បច្ចុប្បន្នដែលអ្នកកំពុងតាមដាន។</string>
+    <!--static texts-->
+    <string name="demo_habitA">ទម្លាប់​ ក</string>
+    <string name="demo_habitB">ទម្លាប់​ ខ</string>
+    <string name="demo_habitC">ទម្លាប់​ គ</string>
+
+    <!--dummy texts-->
+    <string name="insert">បញ្ចូល​ចំណង​ជើង​</string>
+</resources>

@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">My Habit</string>
+
+    <!--activity_main: Main screen-->
+    <string name="greeting_text">Welcome to your habit tracking app!</string>
+    <string name="view_habit">View my current habits</string>
+
+    <!--activity_2: create habit-->
+    <string name="instruction_act2">Create a new habit below:</string>
+
+    <!--activity_3: View current habits-->
+    <string name="instruction_act3">This is the list of your current habits you are tracking.</string>
+    <!--static texts-->
+    <string name="demo_habitA">Habit A</string>
+    <string name="demo_habitB">Habit B</string>
+    <string name="demo_habitC">Habit C</string>
+
+    <!--dummy texts-->
+    <string name="insert">INSERT TITLE</string>
 </resources>

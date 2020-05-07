@@ -9,37 +9,19 @@
         android:id="@+id/create_habit_instruction"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/instruction_act3"
+        android:text="@string/instruction_act2"
         android:textColor="@color/colorBlack"
         android:layout_marginVertical="16dp"
         android:layout_marginLeft="25dp"/>
 
     <!--Dummy buttons-->
     <Button
-        android:layout_width="370dp"
+        android:layout_width="680dp"
         android:layout_height="150dp"
         android:layout_marginLeft="25dp"
         android:layout_marginVertical="5dp"
         android:background="@color/colorGray"
         android:textColor="@color/colorWhite"
-        android:text="@string/demo_habitA" />
-
-    <Button
-        android:layout_width="370dp"
-        android:layout_height="150dp"
-        android:layout_marginLeft="25dp"
-        android:layout_marginVertical="5dp"
-        android:background="@color/colorGray"
-        android:textColor="@color/colorWhite"
-        android:text="@string/demo_habitB" />
-
-    <Button
-        android:layout_width="370dp"
-        android:layout_height="150dp"
-        android:layout_marginLeft="25dp"
-        android:layout_marginVertical="5dp"
-        android:background="@color/colorGray"
-        android:textColor="@color/colorWhite"
-        android:text="@string/demo_habitC" />
+        android:text="@string/insert" />
 
 </LinearLayout>

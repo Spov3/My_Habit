@@ -16,7 +16,7 @@
 
     <!--Dummy buttons-->
     <Button
-        android:layout_width="370dp"
+        android:layout_width="680dp"
         android:layout_height="150dp"
         android:layout_marginLeft="25dp"
         android:layout_marginVertical="5dp"
@@ -25,7 +25,7 @@
         android:text="@string/demo_habitA" />
 
     <Button
-        android:layout_width="370dp"
+        android:layout_width="680dp"
         android:layout_height="150dp"
         android:layout_marginLeft="25dp"
         android:layout_marginVertical="5dp"
@@ -34,7 +34,7 @@
         android:text="@string/demo_habitB" />
 
     <Button
-        android:layout_width="370dp"
+        android:layout_width="680dp"
         android:layout_height="150dp"
         android:layout_marginLeft="25dp"
         android:layout_marginVertical="5dp"
