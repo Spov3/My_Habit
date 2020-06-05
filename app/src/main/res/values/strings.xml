@@ -17,4 +17,11 @@
 
     <!--dummy texts-->
     <string name="insert">INSERT TITLE</string>
+
+
+    <!--June 4, 2020-->
+    <!--Activity_Time - Time tracking page-->
+    <string name="instruction1">Insert your daily time tracking here</string>
+
+
 </resources>
