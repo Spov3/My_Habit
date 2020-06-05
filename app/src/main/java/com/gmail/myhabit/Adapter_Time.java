@@ -31,7 +31,7 @@ public class Adapter_Time extends RecyclerView.Adapter<ViewHolder_Time> {
     @Override
     public void onBindViewHolder(@NonNull ViewHolder_Time holder, int position) {
         Time time = time[position];
-        holder.bind(time);
+        holder.bind(time); 
 
     }
 
