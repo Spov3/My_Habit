@@ -7,15 +7,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-public class Activity_Time extends AppCompatActivity{
+public class TimesActivity extends AppCompatActivity{
 
     @Override
     protected void onCreate (@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_time);
+        setContentView(R.layout.activity_times);
 
-        //Make a reference to the RecylcerView
+        //Make a reference to the RecyclerView
         RecyclerView recyclerView = findViewById(R.id.recycler_view);
 
         //Create and set a layout manager
@@ -23,7 +23,8 @@ public class Activity_Time extends AppCompatActivity{
         recyclerView.setLayoutManager(layoutManager);
 
         //Create and set an adapter
-        Adapter_Time adapter = new Adapter_Time(times);
+        Time[] times = loadTime();
+        TimesAdapter adapter = new TimesAdapter(times);
         recyclerView.setAdapter(adapter);
 
     }
@@ -38,6 +39,11 @@ public class Activity_Time extends AppCompatActivity{
         time2.setCategory("Study");
         time2.setDuration("50 min");
 
+        Time time3 = new Time();
+        time3.setCategory("Personal");
+        time3.setDuration("120 min");
+
+        return new Time[]{time1, time2, time3};
     }
 
 }

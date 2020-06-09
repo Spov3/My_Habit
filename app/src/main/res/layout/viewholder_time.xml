@@ -15,7 +15,14 @@
             android:layout_centerVertical="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Category" />
+            android:text="category" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txt_duration"
+            android:layout_alignTop="@+id/txt_duration"
+            android:text="currently" />
 
         <TextView
             android:id="@+id/txt_duration"
@@ -24,7 +31,7 @@
             android:layout_alignParentRight="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Duration" />
+            android:text="duration" />
 
     </RelativeLayout>
 

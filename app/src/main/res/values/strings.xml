@@ -21,7 +21,7 @@
 
     <!--June 4, 2020-->
     <!--Activity_Time - Time tracking page-->
-    <string name="instruction1">Insert your daily time tracking here</string>
+    <string name="instruction1">See all of your time tracked here </string>
 
 
 </resources>
