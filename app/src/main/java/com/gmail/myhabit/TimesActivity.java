@@ -37,7 +37,7 @@ public class TimesActivity extends AppCompatActivity{
     }
 
     private void loadTime(){
-        //load email from the server
+        //load time log from the server
         String url = "http://10.0.2.2:8888/time.php";
 
         //create a request

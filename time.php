@@ -3,12 +3,12 @@
 $time1 = new stdClass();
 $time1->id = 1;
 $time1->category = 'Work';
-$time1->duration = '40 min';
+$time1->duration = '30 min';
 
 $time2 = new stdClass();
 $time2->id = 2;
 $time2->category = 'Study';
-$time2->duration = '50 min';
+$time2->duration = '60 min';
 
 $time3 = new stdClass();
 $time3->id = 3;
