@@ -1,13 +1,23 @@
 package com.gmail.myhabit;
 
 import android.os.Bundle;
+import android.util.Log;
+import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
+import com.google.gson.Gson;
+
 public class TimesActivity extends AppCompatActivity{
+
+    RecyclerView recyclerView;
 
     @Override
     protected void onCreate (@Nullable Bundle savedInstanceState) {
@@ -16,34 +26,44 @@ public class TimesActivity extends AppCompatActivity{
         setContentView(R.layout.activity_times);
 
         //Make a reference to the RecyclerView
-        RecyclerView recyclerView = findViewById(R.id.recycler_view);
+        recyclerView = findViewById(R.id.recycler_view);
 
         //Create and set a layout manager
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
 
-        //Create and set an adapter
-        Time[] times = loadTime();
-        TimesAdapter adapter = new TimesAdapter(times);
-        recyclerView.setAdapter(adapter);
+        loadTime();
 
     }
 
-    private Time[] loadTime(){
-        // Temporary Data
-        Time time1 = new Time();
-        time1.setCategory("Work");
-        time1.setDuration("40 min");
+    private void loadTime(){
+        //load email from the server
+        String url = "http://10.0.2.2:8888/time.php";
 
-        Time time2 = new Time();
-        time2.setCategory("Study");
-        time2.setDuration("50 min");
+        //create a request
+        StringRequest request = new StringRequest(url, new Response.Listener<String>() {
+            @Override
+            public void onResponse(String response) {
+                //convert json string to array of Time using Gson
+                Gson gson = new Gson();
+                Time[] times = gson.fromJson(response, Time[].class);
+                //Create and set an adapter
+                TimesAdapter adapter = new TimesAdapter(times);
+                recyclerView.setAdapter(adapter);
 
-        Time time3 = new Time();
-        time3.setCategory("Personal");
-        time3.setDuration("120 min");
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Toast.makeText(TimesActivity.this, "An error occurred while retrieving data from the server.", Toast.LENGTH_LONG).show();
+                Log.d("piumyhabit", "error data retrieval" + error.getMessage());
 
-        return new Time[]{time1, time2, time3};
+            }
+        });
+
+        //Add the request to the Queue
+        Volley.newRequestQueue(this ).add(request);
+
     }
 
 }
