@@ -17,4 +17,14 @@
 
     <!--dummy texts-->
     <string name="insert">បញ្ចូល​ចំណង​ជើង​</string>
+    <string name="log_time">ចុះ​ម៉ោង​</string>
+    <string name="category">ប្រភេទវេលា</string>
+    <string name="edit_time">កែ​ម៉ោង</string>
+    <string name="edit_your_information_below">កែប្រែព័ត៌មានរបស់អ្នកនៅខាងក្រោម៖</string>
+    <string name="duration_min">រយៈពេល (នាទី)</string>
+    <string name="confirm">ត្រឹមត្រូវ</string>
+    <string name="my_habit">​ទម្លាប់​របស់​ខ្ញុំ</string>
+    <string name="how_s_your_day_going">តើថ្ងៃនេះយ៉ាងម៉េចដែរ?</string>
+    <string name="see_today_s_tracked_time_here">មើលពេលវេលាតាមដានថ្ងៃនេះនៅទីនេះ៖</string>
+    <string name="log">ចុះ</string>
 </resources>

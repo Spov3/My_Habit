@@ -1,16 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:background="@color/colorDarkBlue"
-        android:layout_height="125dp" />
+        android:layout_height="150dp"
+        android:background="@color/colorDarkBlue">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:id="@+id/txtdashboard"
+                android:text="@string/my_habit"
+                android:textSize="50sp"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_below="@+id/txtdashboard"
+                android:layout_marginTop="10dp"
+                android:text="@string/how_s_your_day_going"
+                android:textSize="15sp"
+                android:textColor="@color/colorWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:id="@+id/create_habit"
+                android:onClick="onButtonClick2"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_add"
+                android:layout_width="100dp"
+                android:layout_height="100dp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
 
     <TextView
-        android:text="@string/instruction1"
+        android:text="@string/see_today_s_tracked_time_here"
         android:layout_margin="25dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />

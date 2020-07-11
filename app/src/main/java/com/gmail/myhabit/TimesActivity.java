@@ -1,7 +1,9 @@
 package com.gmail.myhabit;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
@@ -35,6 +37,22 @@ public class TimesActivity extends AppCompatActivity{
         loadTime();
 
     }
+
+    public void onButtonClick2(View view){
+        Intent intent2 = new Intent(this, Activity2.class);
+        startActivity(intent2);
+    }
+
+    public void onButtonClick3(View view){
+        Intent intent3 = new Intent(this, Activity3.class);
+        startActivity(intent3);
+    }
+
+    public void onButtonClickEdit(View view){
+        Intent intent4 = new Intent(this, EditActivity.class);
+        startActivity(intent4);
+    }
+
 
     private void loadTime(){
         //load time log from the server

@@ -22,6 +22,16 @@
     <!--June 4, 2020-->
     <!--Activity_Time - Time tracking page-->
     <string name="instruction1">See all of your time tracked here </string>
+    <string name="log_time">Log Time</string>
+    <string name="category">Category</string>
+    <string name="edit_time">Edit Time</string>
+    <string name="edit_your_information_below">Edit your information below</string>
+    <string name="duration_min">Duration (min)</string>
+    <string name="confirm">Confirm</string>
+    <string name="my_habit">My Habit</string>
+    <string name="how_s_your_day_going">How\'s your day going?</string>
+    <string name="see_today_s_tracked_time_here">See today\'s tracked time here:</string>
+    <string name="log">Log</string>
 
 
 </resources>
