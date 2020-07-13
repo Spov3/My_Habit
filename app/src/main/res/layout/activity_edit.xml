@@ -24,7 +24,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
-                android:text="@string/log_time"
+                android:text="@string/edit_time"
                 android:textColor="@color/colorWhite"
                 android:textSize="50sp"
                 android:textStyle="bold" />
@@ -37,7 +37,7 @@
         android:id="@+id/create_habit_instruction"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/instruction_act2"
+        android:text="@string/edit_your_information_below"
         android:textColor="@color/colorBlack"
         android:layout_marginVertical="16dp"
         android:layout_marginLeft="25dp"/>
@@ -64,6 +64,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
+            android:autofillHints="Work"
             android:inputType="textAutoCorrect" />
     </LinearLayout>
 
@@ -90,9 +91,12 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:inputType="time" />
+            android:inputType="time"
+            android:importantForAutofill="no" />
 
     </LinearLayout>
+
+    
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -109,8 +113,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:onClick="onButtonClickLog"
-            android:text="@string/log" />
+            android:onClick="onButtonClickConfirm"
+            android:text="@string/confirm" />
 
     </LinearLayout>
 
