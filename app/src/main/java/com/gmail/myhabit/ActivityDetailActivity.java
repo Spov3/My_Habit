@@ -17,7 +17,7 @@ import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.google.gson.Gson;
 
-public class TimesActivity extends AppCompatActivity{
+public class ActivityDetailActivity extends AppCompatActivity{
 
     RecyclerView recyclerView;
 
@@ -25,10 +25,10 @@ public class TimesActivity extends AppCompatActivity{
     protected void onCreate (@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_times);
+        setContentView(R.layout.activity_detailactivity);
 
         //Make a reference to the RecyclerView
-        recyclerView = findViewById(R.id.recycler_view);
+        recyclerView = findViewById(R.id.recycler_view_detail);
 
         //Create and set a layout manager
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
@@ -38,18 +38,9 @@ public class TimesActivity extends AppCompatActivity{
 
     }
 
-    public void onButtonClick2(View view){
-        Intent intent2 = new Intent(this, Activity2.class);
-        startActivity(intent2);
-    }
 
-    public void onButtonClick3(View view){
-        Intent intent3 = new Intent(this, Activity3.class);
-        startActivity(intent3);
-    }
-
-    public void onButtonClickDetail(View view){
-        Intent intent4 = new Intent(this, ActivityDetailActivity.class);
+    public void onButtonClickEdit(View view){
+        Intent intent4 = new Intent(this, EditActivity.class);
         startActivity(intent4);
     }
 
@@ -64,16 +55,16 @@ public class TimesActivity extends AppCompatActivity{
             public void onResponse(String response) {
                 //convert json string to array of Time using Gson
                 Gson gson = new Gson();
-                Time[] times = gson.fromJson(response, Time[].class);
+                ActivityDetail[] activityDetails = gson.fromJson(response, ActivityDetail[].class);
                 //Create and set an adapter
-                TimesAdapter adapter = new TimesAdapter(times);
+                ActivityDetailAdapter adapter = new ActivityDetailAdapter(activityDetails);
                 recyclerView.setAdapter(adapter);
 
             }
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                Toast.makeText(TimesActivity.this, "An error occurred while retrieving data from the server.", Toast.LENGTH_LONG).show();
+                Toast.makeText(ActivityDetailActivity.this, "An error occurred while retrieving data from the server.", Toast.LENGTH_LONG).show();
                 Log.d("piumyhabit", "error data retrieval" + error.getMessage());
 
             }

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="100dp"
+    android:layout_height="400dp"
     android:padding="20dp"
     android:orientation="vertical">
 
@@ -12,7 +12,7 @@
         <TextView
             android:id="@+id/txt_category"
             android:textSize="25sp"
-            android:layout_centerVertical="true"
+
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="category" />
@@ -20,35 +20,39 @@
 
         <TextView
             android:id="@+id/txt_duration"
-            android:padding="20dp"
             android:textSize="18sp"
             android:textStyle="bold"
-            android:layout_centerInParent="true"
+            android:layout_marginTop="50dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="duration" />
 
         <TextView
             android:layout_width="wrap_content"
+            android:textSize="18sp"
             android:layout_height="wrap_content"
-            android:layout_alignTop="@id/txt_duration"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="210dp"
-            android:layout_marginTop="23dp"
-            android:layout_marginRight="-45dp"
-            android:textStyle="bold"
-            android:text="minutes" />
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="50dp"
+            android:text="minutes"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:text="description" />
 
         <Button
             android:id="@+id/button5"
             android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
-            android:onClick="onButtonClickDetail"
-            android:text="Detail" />
+            android:onClick="onButtonClickEdit"
+            android:text="Edit" />
 
     </RelativeLayout>
+
 
 
 

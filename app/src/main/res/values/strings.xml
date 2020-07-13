@@ -32,6 +32,7 @@
     <string name="how_s_your_day_going">How\'s your day going?</string>
     <string name="see_today_s_tracked_time_here">See today\'s tracked time here:</string>
     <string name="log">Log</string>
+    <string name="time_detail">Time Detail</string>
 
 
 </resources>
