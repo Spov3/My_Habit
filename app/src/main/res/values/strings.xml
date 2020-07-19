@@ -5,8 +5,8 @@
     <string name="greeting_text">Welcome to your habit tracking app!</string>
     <string name="view_habit">View my current habits</string>
 
-    <!--activity_2: create habit-->
-    <string name="instruction_act2">Create a new habit below:</string>
+    <!--activity_time: log time-->
+    <string name="instruction_act2">Create a new entry by typing an activity category and duration:</string>
 
     <!--activity_3: View current habits-->
     <string name="instruction_act3">This is the list of your current habits you are tracking.</string>
@@ -33,6 +33,12 @@
     <string name="see_today_s_tracked_time_here">See today\'s tracked time here:</string>
     <string name="log">Log</string>
     <string name="time_detail">Time Detail</string>
+    <string name="date">Date</string>
+    <string name="description">Description</string>
+    <string name="insert_up_to_25_words">insert up to 25 words</string>
+    <string name="mm_dd_yyyy">mm/dd/yyyy</string>
+    <string name="example_160">example: 160</string>
+    <string name="example_work">example: work</string>
 
 
 </resources>

@@ -5,11 +5,12 @@
     <string name="greeting_text">សូម​ស្វាគមន៍​មក​កាន់​កម្មវិធី​តាមដាន​ទម្លាប់​របស់​អ្នក​!</string>
     <string name="view_habit">មេីល​ទម្លាប់​របស់​ខ្ញុំ​</string>
 
-    <!--activity_2: create habit-->
-    <string name="instruction_act2">បង្កើត​ទម្លាប់​ថ្មី​ខាង​ក្រោម​នេះ​៖</string>
+    <!--activity_time: log time-->
+    <string name="instruction_act2">ចុះពេលវេលាថ្មីខាងក្រោម៖</string>
 
     <!--activity_3: View current habits-->
     <string name="instruction_act3">នេះគឺជាបញ្ជីទម្លាប់បច្ចុប្បន្នដែលអ្នកកំពុងតាមដាន។</string>
+
     <!--static texts-->
     <string name="demo_habitA">ទម្លាប់​ ក</string>
     <string name="demo_habitB">ទម្លាប់​ ខ</string>
@@ -28,4 +29,10 @@
     <string name="see_today_s_tracked_time_here">មើលពេលវេលាតាមដានថ្ងៃនេះនៅទីនេះ៖</string>
     <string name="log">ចុះ</string>
     <string name="time_detail">ព័ត៌មានលម្អិត</string>
+    <string name="date">Date</string>
+    <string name="description">Description</string>
+    <string name="insert_up_to_100_words">insert up to 100 words</string>
+    <string name="mm_dd_yyyy">mm/dd/yyyy</string>
+    <string name="example_160">example: 160</string>
+    <string name="example_work">example: work</string>
 </resources>

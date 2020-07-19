@@ -4,6 +4,8 @@ public class Time {
 
     private String category;
     private String duration;
+    private String description;
+    private String date;
     private long time;
 
     public String getCategory() {
@@ -22,9 +24,21 @@ public class Time {
         this.duration = duration;
     }
 
-    public long getTime() {
-        return time;
+    public String getDescription() { return description; }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
+    public long getTime() { return time; }
 
     public void setTime(long time) {
         this.time = time;

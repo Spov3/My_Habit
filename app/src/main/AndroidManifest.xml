@@ -13,7 +13,7 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
 
-        <activity android:name=".TimesActivity">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -21,7 +21,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".Activity2" />
+        <activity android:name=".TrackActivity" />
         <activity android:name=".Activity3" />
         <activity android:name=".EditActivity" />
         <activity android:name=".ActivityDetailActivity" />
