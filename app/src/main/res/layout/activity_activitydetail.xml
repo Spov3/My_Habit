@@ -4,6 +4,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/bg_white"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <LinearLayout
@@ -43,6 +44,7 @@
         <TextView
             android:id="@+id/txt_category_detail"
             android:textSize="25sp"
+            android:textColor="@color/colorBlack"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="category" />
@@ -52,6 +54,7 @@
             android:id="@+id/txt_duration_detail"
             android:textSize="18sp"
             android:textStyle="bold"
+            android:textColor="@color/colorBlack"
             android:layout_marginTop="50dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -61,6 +64,7 @@
             android:layout_width="wrap_content"
             android:textSize="18sp"
             android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
             android:layout_marginLeft="50dp"
             android:layout_marginTop="50dp"
             android:text="minutes"
@@ -69,6 +73,7 @@
         <TextView
             android:id="@+id/txt_date_detail"
             android:layout_width="wrap_content"
+            android:textColor="@color/colorBlack"
             android:layout_height="wrap_content"
             android:layout_marginTop="100dp"
             android:text="date" />
@@ -76,6 +81,7 @@
         <TextView
             android:id="@+id/txt_description_detail"
             android:layout_width="wrap_content"
+            android:textColor="@color/colorBlack"
             android:layout_height="wrap_content"
             android:layout_marginTop="150dp"
             android:text="description" />

@@ -4,6 +4,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/bg_white"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <LinearLayout
@@ -53,11 +54,13 @@
     <TextView
         android:text="@string/see_today_s_tracked_time_here"
         android:layout_margin="25dp"
+        android:textColor="@color/colorBlack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_view"
+        android:textColor="@color/colorBlack"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 

@@ -30,9 +30,9 @@
     <string name="log">ចុះ</string>
     <string name="time_detail">ព័ត៌មានលម្អិត</string>
     <string name="date">Date</string>
-    <string name="description">Description</string>
-    <string name="insert_up_to_100_words">insert up to 100 words</string>
+    <string name="description">ការពិពណ៌នា</string>
+    <string name="insert_up_to_100_words">បញ្ចូលរហូតដល់ ១០០ ពាក្យ</string>
     <string name="mm_dd_yyyy">mm/dd/yyyy</string>
-    <string name="example_160">example: 160</string>
-    <string name="example_work">example: work</string>
+    <string name="example_160">ឧទាហរណ៍៖ ១៦០</string>
+    <string name="example_work">ឧទាហរណ៍ៈការងារ</string>
 </resources>

@@ -16,6 +16,7 @@
             android:layout_centerVertical="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
             android:text="category" />
 
 
@@ -27,11 +28,13 @@
             android:layout_centerInParent="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
             android:text="duration" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
             android:layout_alignTop="@id/txt_duration"
             android:layout_centerVertical="true"
             android:layout_marginLeft="210dp"
@@ -45,6 +48,7 @@
             android:id="@+id/txt_date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
             android:text="date" />
